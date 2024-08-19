@@ -7,22 +7,25 @@ import { GoogleGenerativeAI } from "@google/generative-ai";
 function Generate() {
   const [generated, setGenerated] = useState(false);
   const [notes, setNotes] = useState("");
+  const [flashCards, setFlashCards] = useState([]);
   const geminiKey = import.meta.env.VITE_GEMINI_API_KEY;
   const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
   const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
   async function generate() {
-    const prompt = `Generate flashcards for these notes: ${notes}`;
+    console.log("loading");
+    const prompt = `Generate flashcards for these notes: ${notes}. Return in JSON format so that I can easily access the front and back info for each card. No need to have "JSON" in the beginning. Please use the term front and back in the JSON data.`;
     const result = await model.generateContent(prompt);
     const response = await result.response;
     const text = response.text();
-    const flashcards = JSON.parse(text);
-    console.log(flashcards);
+    setFlashCards(text);
+    console.log(flashCards);
+    console.log(flashCards.length); 
   }
 
-  function handleSubmit(event) {
+  const submitForm = async (event) => {
     event.preventDefault();
-  }
+  };
 
   return (
     <div className="generateContainer">
@@ -32,7 +35,7 @@ function Generate() {
         automatically generate flashcards from your content. For a more focused
         set, list specific terms or questions you'd like included.
       </p>
-      <form onSubmit={() => handleSubmit()}> 
+      <form onSubmit={submitForm}>
         <textarea
           inputMode="textField"
           placeholder="Simply paste or type your notes into the text box."
