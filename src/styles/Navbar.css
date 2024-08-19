@@ -1,0 +1,30 @@
+.flashifyNavBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flashifyTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff8640;
+}
+
+.flashify {
+  text-decoration: none;
+  color: #ff8640;
+}
+
+.userButton {
+  width: 20px;
+  height: 20px;
+}
+
+.flexifyProfile {
+  flex-direction: column;
+}
+
+.flexifyProfile p {
+  font-size: 15px;
+  margin-top: 2px;
+}
