@@ -26,9 +26,54 @@
   padding: 20px;
   padding-right: 30px;
   padding-left: 30px;
-  margin-top: 15px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.generateNewButton {
+  background-color: #ffe7da56;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 25px;
+  margin-right: 20px;
+}
+
+.saveButton {
+  background-color: #ff8640;
+  font-size: 20px;
+  border-style: none;
+  border-radius: 10px;
+  padding: 20px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-top: 25px;
 }
 
 .generateButton:hover {
   cursor: pointer;
+}
+
+.frontCardContainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.frontCard {
+  width: 100%;
+  background-color: #ff8640; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+  border: 1px solid #000000;
+  margin-bottom: 10px;
 }

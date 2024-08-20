@@ -9,7 +9,6 @@ import Landing from "./pages/Landing";
 import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup";
 import Generate from "./components/Generate";
-import GeneratedCards from "./components/GeneratedCards";
 
 function App() {
   return (
@@ -21,7 +20,6 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/generate" element={<Generate />} />
-          <Route path="/generated" element={<GeneratedCards />} />
         </Routes>
       </div>
     </>
