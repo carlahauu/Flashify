@@ -3,6 +3,15 @@
     color: white; 
 }
 
+.heroDescription{
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
 .heroGetStartedBtn{
     background-color: #ff8640; 
     font-size: 20px;
@@ -12,6 +21,10 @@
     padding-right: 30px;
     padding-left: 30px;
     margin-top: -10px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .heroGetStartedBtn:hover{
@@ -21,4 +34,18 @@
 .heroGetStarted{
     text-decoration: none;
     text-decoration-color: black;
+}
+
+.heroContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heroImg{
+    width: fit-content;
+    margin-top: 35px;
+    border-width: 5px;
+    border-color: white;
+    border-style: solid;
 }

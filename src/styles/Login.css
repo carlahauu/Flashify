@@ -1,7 +1,6 @@
-.logInContainer{
-    align-items: center;
-    display: flex;
-    justify-self: center;
-    align-content: center;
-    text-align: center;
+.logInContainer {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
