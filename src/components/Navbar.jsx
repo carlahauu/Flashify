@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import { SignIn, SignedOut, UserButton, SignedIn } from "@clerk/clerk-react";
+import { SignIn, SignedOut, UserButton, SignedIn, SignInButton } from "@clerk/clerk-react";
 
 function Navbar() {
   return (
@@ -17,7 +17,7 @@ function Navbar() {
               <a href="/login">Log In</a>
             </button>
             <button className="signUpButton">
-              <a href="/signup">Sign Up</a>
+              <a href="/signup">Sign In</a>
             </button>
           </div>
         </SignedOut>
