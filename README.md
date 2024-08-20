@@ -1,9 +1,12 @@
-# React + Vite
+## How to Use 
+1. Clone this GitHub Repo
+2. cd flashify
+3. npm install
+4. npm run dev
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In order for this to properly run, you need to add an .env file into the root directory. 
+In this file, include: 
+VITE_CLERK_PUBLISHABLE_KEY="pk_test_Y2hpZWYtZ2FyLTc3LmNsZXJrLmFjY291bnRzLmRldiQ"
+VITE_GEMINI_API_KEY=[YOUR GEMINI API KEY]
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# flashily
+Go to [Google AI for Developers](https://ai.google.dev/gemini-api/docs/api-key) to get a free Gemini API key. 
