@@ -12,12 +12,15 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ClerkProvider publishableKey="pk_live_Y2xlcmsuZmxhc2hpZnkub25saW5lJA" afterSignOutUrl="/">
+    <ClerkProvider
+      publishableKey="pk_live_Y2xlcmsuZmxhc2hpZnkub25saW5lJA"
+      afterSignOutUrl="/"
+    >
+      <BrowserRouter>
         <HelmetProvider>
           <App />
         </HelmetProvider>
-      </ClerkProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ClerkProvider>
   </React.StrictMode>
 );

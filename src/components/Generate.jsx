@@ -1,4 +1,3 @@
-import { height } from "@mui/system";
 import React from "react";
 import "../styles/Generate.css";
 import { useState } from "react";
