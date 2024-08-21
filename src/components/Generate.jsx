@@ -68,7 +68,7 @@ function Generate() {
       )}
       <div>
         {flashCards.map((data, index) => {
-          const isFlipped = index === flippedCardIndex; // Check if the current card is flipped
+          const isFlipped = index === flippedCardIndex; 
           return (
             <div
               onClick={() => flipCards(index)}
