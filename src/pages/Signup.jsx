@@ -5,7 +5,7 @@ export function Signup() {
   return (
     <>
       <div className="logInContainer">
-        <SignUp></SignUp>
+      <SignUp path="/signup" />
       </div>
     </>
   );

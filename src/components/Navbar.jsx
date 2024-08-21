@@ -17,7 +17,7 @@ function Navbar() {
               <a href="/login">Log In</a>
             </button>
             <button className="signUpButton">
-              <a href="/signup">Sign In</a>
+              <a href="/signup">Sign Up</a>
             </button>
           </div>
         </SignedOut>

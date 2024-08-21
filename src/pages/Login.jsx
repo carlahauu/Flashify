@@ -7,7 +7,7 @@ export function Login() {
   return (
     <>
       <div className="logInContainer">
-        <SignIn></SignIn>
+        <SignIn path="/login"/>
       </div>
     </>
   );
