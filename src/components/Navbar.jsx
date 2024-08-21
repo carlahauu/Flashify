@@ -14,10 +14,10 @@ function Navbar() {
         <SignedOut>
           <div className="navButtons">
             <button className="logInButton">
-              <a href="/login">Log In</a>
+              <a href="https://accounts.flashify.online/sign-in">Log In</a>
             </button>
             <button className="signUpButton">
-              <a href="/signup">Sign Up</a>
+              <a href="https://accounts.flashify.online/sign-up">Sign Up</a>
             </button>
           </div>
         </SignedOut>
