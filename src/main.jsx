@@ -13,7 +13,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ClerkProvider publishableKey={import.meta.env.VITE_CLERK_PUBLISHABLE_KEY} afterSignOutUrl="/">
+      <ClerkProvider publishableKey="pk_live_Y2xlcmsuZmxhc2hpZnkub25saW5lJA" afterSignOutUrl="/">
         <HelmetProvider>
           <App />
         </HelmetProvider>
