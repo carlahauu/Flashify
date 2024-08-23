@@ -14,7 +14,7 @@ export function Hero() {
         <SignedOut>
           <a
             className="heroGetStarted"
-            href="/signup/*"
+            href="https://accounts.flashify.online/sign-up"
             style={{ color: "black" }}
           >
             Get Started Today!
